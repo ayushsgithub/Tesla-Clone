@@ -14,35 +14,35 @@ function Header() {
 
   return (
     <Container>
-      <a href="https://www.tesla.com">
+      <a href="#">
         <img src={logo} alt="error" />
       </a>
       <Menu>
         {cars && cars.map((car, index) => (
-          <a key={index} href="https://www.tesla.com">{car}</a>
+          <a key={index} href="#">{car}</a>
         ))}
         
       </Menu>
       <RightMenu>
-        <a href="https://shop.tesla.com/">Shop</a>
-        <a href="https://www.tesla.com/powerwall">Account</a>
+        <a href="#">Shop</a>
+        <a href="#">Account</a>
         <CustomMenu onClick={() => setBurgerStatus(prev => !BurgerStatus)} />
       </RightMenu>
       <BurgerNav show={BurgerStatus}>
       <CloseWrapper>
         <CustomClose onClick={() => setBurgerStatus(prev => !BurgerStatus)} />
         </CloseWrapper>
-        <li><a href="https://www.tesla.com">Existing Inventory</a></li>
-        <li><a href="https://www.tesla.com/powerwall">Used Inventory</a></li>
-        <li><a href="https://www.tesla.com">Trade-In</a></li>
-        <li><a href="https://www.tesla.com">Cyber Truck</a></li>
-        <li><a href="https://www.tesla.com">Roadster</a></li>
-        <li><a href="https://www.tesla.com/solarpanels">Semi</a></li>
-        <li><a href="https://www.tesla.com/solarpanels">Charging</a></li>
-        <li><a href="https://www.tesla.com/solarpanels">Commercial Energy</a></li>
-        <li><a href="https://www.tesla.com/utilities">Utilities</a></li>
-        <li><a href="https://www.tesla.com/support">Find Us</a></li>
-        <li><a href="https://www.tesla.com/support">Support</a></li>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Used Inventory</a></li>
+        <li><a href="#">Trade-In</a></li>
+        <li><a href="#">Cyber Truck</a></li>
+        <li><a href="#">Roadster</a></li>
+        <li><a href="#">Semi</a></li>
+        <li><a href="#">Charging</a></li>
+        <li><a href="#">Commercial Energy</a></li>
+        <li><a href="#">Utilities</a></li>
+        <li><a href="#">Find Us</a></li>
+        <li><a href="#">Support</a></li>
         
         
       </BurgerNav>
